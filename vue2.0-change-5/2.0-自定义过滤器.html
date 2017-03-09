@@ -15,23 +15,23 @@
             return n<10?'0'+n:''+n;
         });
 		
-		//capitalize 开头字母大写
-		Vue.filter('capitalize',function(n){  
-			return n.charAt(0).toUpperCase()+n.substring(1);
-		})
-		
-		//currency 货币
-		Vue.filter('currency',function(n,a){
-			var len = n.length,str2 = '', max = Math.floor(len / 3); 
-			for(var i = 0 ; i < max ; i++){ 
-			var s = n.slice(len - 3, len); 
-			n = n.substr(0, len - 3); 
-			str2 = (',' + s) + str2; 
-			len = n.length; 
-			} 
-			n += str2; 
-			return a+n
-		})
+	//capitalize 开头字母大写
+	Vue.filter('capitalize',function(n){  
+		return n.charAt(0).toUpperCase()+n.substring(1);
+	})
+
+	//currency 货币
+	Vue.filter('currency',function(n,a){
+		var len = n.length,str2 = '', max = Math.floor(len / 3); 
+		for(var i = 0 ; i < max ; i++){ 
+		var s = n.slice(len - 3, len); 
+		n = n.substr(0, len - 3); 
+		str2 = (',' + s) + str2; 
+		len = n.length; 
+		} 
+		n += str2; 
+		return a+n
+	})
 		
         window.onload=function(){
             new Vue({
