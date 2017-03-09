@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+    <script>
+        Vue.filter('toDou',function(n){   //
+            return n<10?'0'+n:''+n;
+        });
+		
+		//capitalize 开头字母大写
+		Vue.filter('capitalize',function(n){  
+			return n.charAt(0).toUpperCase()+n.substring(1);
+		})
+		
+		//currency 货币
+		Vue.filter('currency',function(n,a){
+			var len = n.length,str2 = '', max = Math.floor(len / 3); 
+			for(var i = 0 ; i < max ; i++){ 
+			var s = n.slice(len - 3, len); 
+			n = n.substr(0, len - 3); 
+			str2 = (',' + s) + str2; 
+			len = n.length; 
+			} 
+			n += str2; 
+			return a+n
+		})
+		
+        window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{
+                    msg:9,
+                    a:"english",
+                    money:"1234567"
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <div id="box">
+        {{msg | toDou}}
+        {{a | capitalize}}
+        {{money | currency('￥')}}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
