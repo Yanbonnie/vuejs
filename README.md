@@ -125,7 +125,8 @@ methods: {
 重启webpack，就不会再有报错了。
 
 
-
+vue配置mock模拟接口数据
+https://github.com/carrotz/vue-cli-mock
 
 
 
