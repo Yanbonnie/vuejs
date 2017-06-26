@@ -1,5 +1,17 @@
 # vuejs
 
+Vue脚手架搭建的项目在ie9下第一次进入页面空白，按F12之后才出现界面。原因，ie9下没有console.log().
+解决方案：在index.html页面头部插入下面代码做兼容
+<script type="text/javascript">
+      if(!window.console){
+          window.console = {};
+      }
+      if(!window.console.log){
+          window.console.log = function(msg){};
+      }
+</script>
+
+
 手动配置自己:
 	webpack+vue-loader
 
