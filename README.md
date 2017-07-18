@@ -147,7 +147,8 @@ vue配置mock模拟接口数据
 https://github.com/carrotz/vue-cli-mock
 
 
-
+vue做后台链接
+https://segmentfault.com/a/1190000009506097
 
 
 
