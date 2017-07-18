@@ -1,6 +1,10 @@
 # vuejs
+（a）Vue init webpack projectName 搭建的项目需要全局引入.scss文件，只需要安装下载cnpm install sass-loader node-sass -D 即可
 
-Vue脚手架搭建的项目在ie9下第一次进入页面空白，按F12之后才出现界面。原因，ie9下没有console.log().
+（b）Vue脚手架搭建的项目在ie下报 ReferenceError: “Promise”未定义 解决办法。安装下载 cnpm install babel-polyfill eventsource-polyfill -D，然后在webpack.base.conf.js把原本的入口文件代码app: './src/main.js'修改成app: ["babel-polyfill","eventsource-polyfill","./src/main.js"]即可
+（注：需不需要下载安装 cnpm install es6-promise -D  main.js var Promise = require('es6-promise').Promise; 待定）
+
+（c）Vue脚手架搭建的项目在ie9下第一次进入页面空白，按F12之后才出现界面。原因，ie9下没有console.log().
 解决方案：在index.html页面头部插入下面代码做兼容
 <script type="text/javascript">
       if(!window.console){
@@ -8,9 +12,11 @@ Vue脚手架搭建的项目在ie9下第一次进入页面空白，按F12之后�
       }
       if(!window.console.log){
           window.console.log = function(msg){};
-      }
+      }ReferenceError: “Promise”未定webpack.base.conf.japp: './src/main.js'app: ["babel-polyfill","eventsource-polyfill","./src/main.js
+      
 </script>
 
+（d）
 
 手动配置自己:
 	webpack+vue-loader
