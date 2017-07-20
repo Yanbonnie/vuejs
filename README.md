@@ -16,7 +16,8 @@
       
 </script>
 
-（d）
+（d）webpack配置学习文档链接
+     http://www.qinshenxue.com/article/20161106163608.html
 
 手动配置自己:
 	webpack+vue-loader
