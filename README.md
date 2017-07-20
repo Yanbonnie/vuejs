@@ -12,7 +12,7 @@
       }
       if(!window.console.log){
           window.console.log = function(msg){};
-      }ReferenceError: “Promise”未定webpack.base.conf.japp: './src/main.js'app: ["babel-polyfill","eventsource-polyfill","./src/main.js
+      }
       
 </script>
 
