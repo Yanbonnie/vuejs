@@ -18,6 +18,8 @@
 
 （d）webpack配置学习文档链接
      http://www.qinshenxue.com/article/20161106163608.html
+     
+ (e)vue-cli webpack多Html页面的配置(附框架vue-webpack-multipage实例)  http://www.cnblogs.com/xuelongqy/p/7081419.html
 
 手动配置自己:
 	webpack+vue-loader
