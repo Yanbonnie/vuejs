@@ -20,6 +20,7 @@
      http://www.qinshenxue.com/article/20161106163608.html
      
  (e)vue-cli webpack多Html页面的配置(附框架vue-webpack-multipage实例)  http://www.cnblogs.com/xuelongqy/p/7081419.html
+ (f)webpack 多入口配置  http://www.cnblogs.com/legu/p/5741116.html
 
 手动配置自己:
 	webpack+vue-loader
