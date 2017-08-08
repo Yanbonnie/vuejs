@@ -24,6 +24,12 @@
  (g)vue权限配置  https://segmentfault.com/q/1010000008137883/a-1020000008866251
  (h)vue动态配置路由  https://segmentfault.com/a/1190000009396901
  (i)http://se.360.cn/v6/help/meta.html   360极速模式与兼容模式
+ 	if (window.navigator.userAgent.indexOf('compatible') != -1) {
+          alert('360兼容模式');
+        }
+        if(window.navigator.userAgent.indexOf('AppleWebKit') != -1) {
+          alert('360极速模式');
+        }
 手动配置自己:
 	webpack+vue-loader
 
