@@ -30,6 +30,25 @@
         if(window.navigator.userAgent.indexOf('AppleWebKit') != -1) {
           alert('360极速模式');
         }
+(j)路由定位router-link-exact-active
+computed: {  
+        typeOne: function () {
+        	if(this.$route.params.type) {
+        		if(this.type != 0) { //防止同级的菜单 点击详情重复调用
+        			setTimeout(function() { //需要异步请求
+		        		$('.nav-second-level').hide().parents('li').removeClass('active');
+		        		$('.router-link-exact-active').parent('li').parent('.nav-second-level').slideDown().parents('li').addClass('active').find('.icon').addClass('i-open').removeClass('i-close');
+		        	},0);
+        		}
+        		this.type = this.$route.params.type;
+        		
+        	}else {
+        		this.type = 0;
+        	}
+            return this.type;
+        }
+    }
+    
 手动配置自己:
 	webpack+vue-loader
 
