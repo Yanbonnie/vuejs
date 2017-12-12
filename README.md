@@ -48,6 +48,7 @@ computed: {  
             return this.type;
         }
     }
+ (k).https://www.awesomes.cn/repo/jcc/v-distpicker
     
 手动配置自己:
 	webpack+vue-loader
