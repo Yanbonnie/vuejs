@@ -1,4 +1,4 @@
-问：
+* <font size=red>[vue]</font>问：
 ```
 this.data.abc[qwe].wq = index
 ```
